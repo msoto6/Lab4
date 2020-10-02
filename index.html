@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITMD-361 Lab 4: Volunteer Form</title>
+</head>
+<body>
+  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+    <h1>Volunteer Form</h1>
+    <fieldset>
+      <legend><strong>My Information</strong></legend>
+      <p>
+        <label for="first_name_field">First Name:</label>
+        <input type="text" id="first_name_field" name="first_name_field" placeholder="John">
+      </p>
+      <p>
+        <label for="last_name_field">Last Name:</label>
+        <input type="text" id="last_name_field" name="last_name_field" placeholder="Doe">
+      </p>
+      <p>
+        <label for="phone_field">Phone Number:</label>
+        <input type="text" id="phone_field" name="phone_field" placeholder="123-456-7890">
+      </p>
+      <p>
+        <label for="email_field">Email Address:</label>
+        <input type="text" id="email_field" name="email_field" placeholder="example@email.com">
+      </p>
+    <h3>Gender:</h3>
+      <div>
+        <input type="radio" id="gender_male" name="gender_field" value="male">
+        <label for="gender_male">Male</label>
+      </div>
+      <div>
+        <input type="radio" id="gender_female" name="gender_field" value="female">
+        <label for="gender_female">Female</label>
+      </div>
+      <div>
+        <input type="radio" id="gender_other" name="gender_field" value="other">
+        <label for="gender_other">Other</label>
+      </div>
+    <h3>Age:</h3>
+      <div>
+        <select name="age_field">
+          <optgroup label="Please Select">
+            <option value="Under_18">Under 18</option>
+            <option value="18-24">18 - 24</option>
+            <option value="25-34">25 - 34</option>
+            <option value="35-44">35 - 44</option>
+            <option value="45-54">45 - 54</option>
+            <option value="55-64">55 - 64</option>
+            <option value="65_and_Over">65 and Over</option>
+          </optgroup>
+    	</select>
+      </div>
+  	</fieldset>
+  	<fieldset>
+  	  <legend><strong>My Availability</strong></legend>
+  	  <p>Days Available:</p>
+  	    <div>
+  	      <p><label>Monday <input type="checkbox" name="available_field[]" value="Monday"></label></p>
+  	      <p><label>Tuesday <input type="checkbox" name="available_field[]" value="Tuesday"></label></p>
+  	      <p><label>Wednesday <input type="checkbox" name="available_field[]" value="Wednesday"></label></p>
+  	      <p><label>Thursday <input type="checkbox" name="available_field[]" value="Thursday"></label></p>
+  	      <p><label>Friday <input type="checkbox" name="available_field[]" value="Friday"></label></p>
+  	      <p><label>Saturday <input type="checkbox" name="available_field[]" value="Saturday"></label></p>
+  	      <p><label>Sunday <input type="checkbox" name="available_field[]" value="Sunday"></label></p>
+  	    </div>
+  	    <div>
+  	      <h3>Any Comments?</h3>
+  	      <textarea cols="40" rows="10" name="comments_field" placeholder="Comments"></textarea>
+  	    </div>
+  	    <div>
+  	      <input type="hidden" id="hidden_field" name="hidden_field" value="msoto6">
+  	      <p><input type="submit" value="Send Me"></p>
+  	    </div>
+  	</fieldset>
+  </form>
+</body>
+</html>
